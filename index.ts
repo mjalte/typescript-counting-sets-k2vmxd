@@ -4,7 +4,6 @@ function countSetsOfThree(numbers: number[], threshold: number): number {
     for (let j = i + 1; j < numbers.length - 1; j++) {
       let sum = numbers[i] + numbers[j];
       for (let k = j + 1; k < numbers.length; k++) {
-        console.log(numbers[i], numbers[j], numbers[k]);
         if (sum + numbers[k] <= threshold) underThreshold++;
       }
     }
